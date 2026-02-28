@@ -1,0 +1,434 @@
+/* Mission Vision Goal */
+.three-column-section {
+    padding: 50px 20px;
+}
+
+.mvgcontainer {
+    display: flex;
+    gap: 20px; /* space between columns */
+    flex-wrap: wrap; /* makes it responsive */
+}
+
+.visioncolumn, .missioncolumn, .goalcolumn {
+    flex: 1; /* equal width */
+    background-color: #f5f7fb;
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    min-width: 250px; /* prevents columns from getting too narrow */
+}
+
+/* Hover effect */
+.visioncolumn:hover,
+.missioncolumn:hover,
+.goalcolumn:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    background-color: #e0f0ff;
+}
+
+/* Header styling */
+.visioncolumn h3,
+.missioncolumn h3,
+.goalcolumn h3 {
+    margin-bottom: 12px;
+    color: #0a1f44;
+}
+
+/* Paragraph styling */
+.visioncolumn p,
+.missioncolumn p,
+.goalcolumn p {
+    color: #333;
+    line-height: 1.6;
+}
+.visioncolumn , .missioncolumn{
+    text-align: center;
+}
+
+@media (max-width: 769px) and (min-width: 421px) {
+    .mvgcontainer {
+        flex-wrap: wrap;
+    }
+
+    .missioncolumn,
+    .visioncolumn {
+        flex: 1 1 48%;
+    }
+
+    .goalcolumn {
+        flex: 1 1 100%;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .mvgcontainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .missioncolumn,
+    .visioncolumn,
+    .goalcolumn {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .goalcolumn {
+        padding-left: 20px; /* remove large left padding */
+    }
+}
+
+/* End of Mission Vision Goal */
+
+/* ProgramOutcome Section */
+
+.peo-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 120px;
+    font-family: Arial, sans-serif;
+    background-color: #1b275541;
+    border-radius:20px ;
+}
+.peo-section p{
+    color: white;
+    text-align: center;
+}
+
+.peo-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.peo-section h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.peo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.peo-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.peo-card:hover {
+    transform: translateY(-5px);
+}
+
+.peo-number {
+    min-width: 40px;
+    height: 40px;
+    background-color: #0b5ed7;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.peo-card p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 420px) {
+    .peo-section {
+        padding: 25px 15px;
+        margin: 30px 10px;
+    }
+
+    .peo-section h2,
+    .peo-section h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .peo-container {
+        gap: 15px;
+    }
+
+    .peo-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .peo-number {
+        margin-bottom: 10px;
+    }
+
+    .peo-card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) and (min-width: 421px) {
+    .peo-section {
+        padding: 35px 40px;
+        margin: 40px 20px;
+    }
+
+    .peo-section h2,
+    .peo-section h3 {
+        font-size: 24px;
+    }
+
+    .peo-card {
+        padding: 22px;
+    }
+}
+
+
+/* BTLED Faculty Section */
+.btledfaculty{
+    max-width: 1500px;
+    height: 400px;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.btledfaculty1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btledfaculty h3{
+    font-size: 50px;
+    font-weight: 600px;
+}
+
+/* Profile-container Section */
+.profile-container {
+    position: relative;
+    width: 200px;
+    padding-top: 30px; /* space for the image */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profile-img {
+
+    position: absolute;
+    top: 0;            /* stays inside container */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    border-radius: 10%;
+    z-index: 2;
+}
+
+.card {
+    color: white;
+    height: 200px;
+    margin-top: 60px;
+    background: #170a3f;
+    padding: 120px 10px 50px; /* pushes text below image */
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.card h3{
+    font-size: 20px;
+}
+.card p{
+    font-size: 15px;
+}
+.profile-container:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive design for smaller screen about BTLED Faculty */
+
+@media (max-width: 420px) {
+    .btledfaculty {
+        height: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .btledfaculty h3 {
+        font-size: 28px;
+    }
+
+    .btledfaculty1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-container {
+        width: 90%;
+        margin: 0;
+        transform: none;
+    }
+
+    .profile-container:hover {
+        transform: none; /* disable zoom on mobile */
+    }
+
+    .profile-img {
+        width: 130px;
+    }
+
+    .card {
+        height: auto;
+        padding: 100px 15px 30px;
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 421px) {
+    .btledfaculty {
+        width: 600px;
+        height: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .btledfaculty h3 {
+        font-size: 38px;
+    }
+
+    .btledfaculty1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-container {
+        width: 45%;
+        margin: 0;
+    }
+    .profile-img {
+        max-width: 150px;
+    }
+
+    .profile-container:hover {
+        transform: scale(1.05);
+    }
+    .card {
+        height: auto;
+        padding: 100px 15px 30px;
+    }
+}
+
+
+
+
+
+
+
+/* CONTACT CSS */
+
+.feedback-section h2 {
+    background: linear-gradient(to right, #042b58, #7394b7);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.headercontact {
+    width: 100%;
+    background-color: #cee0f4; /* optional background */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* First wrapper */
+.header1 {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Image container */
+.header2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.header2 img {
+    width: 100%;
+    max-width: 1400px; /* adjust as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+.feedback-section h2 {
+    background: linear-gradient(to right, #042b58, #4da3ff);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+/* 3rd layer */
+
+.thirdlayer {
+    width: 100%;
+    background: linear-gradient(to bottom, #4da3ff, #0a1f44);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.thirdlayer1 {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Image container */
+.layer2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.layer2 img {
+    width: 100%;
+    max-width: 1400px; /* adjust as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+
