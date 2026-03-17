@@ -202,6 +202,99 @@
     }
 }
 
+/*CMO section*/
+.cmo-container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .cmo-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 80, 180, 0.15);
+      overflow: hidden;
+    }
+
+    .cmo-header {
+      padding: 16px;
+      background: linear-gradient(135deg, #022e6f, #0b5ed7);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .cmo-pdf-container {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      background: #dfe9f7;
+    }
+
+    .cmo-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .cmo-actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      background: #f0f6ff;
+    }
+
+    .cmo-btn {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .cmo-download {
+      background: #0b5ed7;
+      color: white;
+    }
+
+    .cmo-download:hover {
+      background: #022e6f;
+    }
+
+    .cmo-open {
+      background: #0b5ed7;
+      color: white;
+    }
+
+    .cmo-open:hover {
+      background: #022e6f;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      .header {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .pdf-container {
+        height: 60vh;
+      }
+
+      .btn {
+        flex: 1;
+        margin: 5px 0;
+        font-size: 13px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+    }
+
+
 
 /* BTLED Faculty Section */
 .btledfaculty{
@@ -213,14 +306,21 @@
     text-align: center;
     font-weight: 600;
 }
+.btledfaculty h3{
+    font-weight: bolder;
+}
 .btledfaculty1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.btledfaculty h3{
-    font-size: 50px;
-    font-weight: 600px;
+.btledfaculty1 .profile-container  h3{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.btledfaculty1 .profile-container p{
+    font-size: 13px;
+    font-weight: 500px;
 }
 
 /* Profile-container Section */
@@ -339,6 +439,9 @@
         height: auto;
         padding: 100px 15px 30px;
     }
+    .btledfaculty1 .profile-container  h3{
+    margin-top: 20px;
+}
 }
 
 

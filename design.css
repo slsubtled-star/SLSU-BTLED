@@ -493,10 +493,11 @@
 
             .slider .list .item .content .title {
                 font-size: 32px;
+                margin-top: -50px;
             }
 
             .slider .list .item .content .type {
-                font-size: 22px;
+                font-size: 15px;
             }
 
             .slider .list .item .content .description {
@@ -523,7 +524,7 @@
             /* arrow buttons position */
 
             .arrowButtons {
-                top: 75%;
+                top: 68%;
                 left: 5%;
             }
 
