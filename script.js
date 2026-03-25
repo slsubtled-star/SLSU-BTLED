@@ -73,20 +73,44 @@ document.addEventListener('DOMContentLoaded', () => {
             moveCarousel(false);
         });
     }
-    /*Accordion*/
+
+
     const headers = document.querySelectorAll(".accordion-header");
 
     headers.forEach(header => {
         header.addEventListener("click", () => {
+
             const item = header.parentElement;
+            const indicator = header.querySelector(".indicator");
 
             document.querySelectorAll(".accordion-item").forEach(i => {
-            if (i !== item) i.classList.remove("active");
+                if (i !== item) {
+                    i.classList.remove("active");
+
+                    // reset other indicators
+                    const otherIndicator = i.querySelector(".indicator");
+                    if(otherIndicator) otherIndicator.textContent = "▼";
+                }
             });
 
             item.classList.toggle("active");
+
+            // change indicator of clicked item
+            if(item.classList.contains("active")){
+                indicator.textContent = "▲";
+            }else{
+                indicator.textContent = "▼";
+            }
+
         });
     });
+
+
+
+
+
+
+
     /*Gallery*/
     const images = document.querySelectorAll('.gallery img');
     const lightbox = document.getElementById('lightbox');
@@ -110,4 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.display = 'none';
         }
     });
+
+    //end
+
+
 });
